@@ -1,0 +1,237 @@
+.noto-sans-jp-webfont {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+}
+nav {
+  font-size: 34px;
+}
+p {
+  font-size: 18px;
+}
+h2 {
+  font-size: 34px;
+}
+h3 {
+  font-size: 24px;
+}
+
+/* PC用 */
+
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    width: 598px;
+    height: 69px;
+    padding: 60px;
+    font-weight: bold;
+  }
+
+  nav > a {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  nav > a:link {
+    color: #000000;
+  }
+
+  nav > a:visited {
+    color: #000000;
+  }
+  nav > a:hover {
+    color: #000000;
+  }
+  nav > a:active {
+    color: #000000;
+  }
+
+  #logo {
+    border: 1px solid #000000; 
+    padding: 10px 30px;
+    margin-right: 100px;
+  }
+
+  #main-visual {
+    position: relative;
+    height: 400px;
+  }
+
+  #main-visual > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #about {
+    width: 598px;
+    margin: 80px auto 50px auto;
+  }
+  #about > div {
+    position: relative;
+  }
+  #about > div > img {
+    position: absolute;
+    width: 140px;
+    top: 20px;
+    left: 20px;
+    border-radius: 200px;
+  }
+  .about-content {
+    text-align: left;
+    display: block;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    line-height: 0.7;
+  }
+  .about-content > p::before {
+    content: "・";
+  }
+
+  #Works {
+    margin: 80px auto;
+    width: 573px;
+  }
+
+  
+  .contents-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .works-content {
+    flex-basis: auto;
+    margin: 0 10px;
+    text-align: center;
+  }
+  .works-content > img {
+    width: 180px;
+  }
+  .works-content > p {
+    width: 178px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    /* 横幅設定 */
+    body {
+      min-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    header {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+    }
+  
+    nav {
+      width: 100%;
+      padding: 10px;
+      font-weight: bold;
+    }
+  
+    nav > a {
+      display: inline-block;
+      text-decoration: none;
+      margin-left: 10px;
+      text-align: right;
+    }
+  
+    nav > a:link {
+      color: #000000;
+    }
+  
+    nav > a:visited {
+      color: #000000;
+    }
+    nav > a:hover {
+      color: #000000;
+    }
+    nav > a:active {
+      color: #000000;
+    }
+  
+    #logo {
+      border: 1px solid #000000; 
+      padding: 10px 30px;
+      text-align: left;
+    }
+  
+    #main-visual {
+      position: relative;
+      height: 400px;
+      width: auto;
+    }
+  
+    #main-visual > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    #about {
+      width: 598px;
+      margin: -100px auto 50px auto;
+    }
+
+    #about > div {
+      position: relative;
+    }
+    #about > div > img {
+      position: absolute;
+      width: 140px;
+      top: 20px;
+      left: 20px;
+      border-radius: 200px;
+    }
+    .about-content {
+      text-align: left;
+      display: block;
+      position: absolute;
+      left: 200px;
+      top: 0;
+      line-height: 0.7;
+    }
+    .about-content > p::before {
+      content: "・";
+    }
+  
+    #Works {
+      margin: 80px auto;
+    }
+
+    .contents-box {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px;
+    }
+
+    .works-content > img {
+      width: 100%;
+    }
+  
+}
